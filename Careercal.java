@@ -15,7 +15,7 @@ public class Careercal {
     public static void insertDetails(Details obj) {
     	
     	try {
-    		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/careercal", "root", "Kar@2004");
+    		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/careercalculator", "root", "user");
     		String query = "INSERT INTO user_details (id, uname, deg, year_of_completion, career_gap, hrsperday, daysperweek, live_projects, start_date, total_days, total_weeks, total_months, end_date) " +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         
